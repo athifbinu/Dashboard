@@ -173,40 +173,36 @@ const Home = () => {
               <img src={Close} alt="" onClick={handleThirdButtonClick} />
           </div>
 
+          
            <span>item Name</span>
            <br />
            <p>logitche ddsvjhds  dsdsv</p>
-  
+      
+       
      <form className='form' onSubmit={handleSubmit}>
       <div>
       <label htmlFor="Amount">Amount</label>
       <br />
-      <input type="text" placeholder='Enter Amount'  name="Amount"  value={formData.Amount} onChange={handleInputChange}  />
+      <input className='form-input' type="text" placeholder='Enter Amount'  name="Amount"  value={formData.Amount} onChange={handleInputChange}  />
     </div>
     <div>
       <label htmlFor="text">Gst</label>
       <br />
-      <input type="text" placeholder='Enter Amount'  name="Gst" value={formData.Gst} onChange={handleInputChange}  />
+      <input className='form-input' type="text" placeholder='Enter Amount'  name="Gst" value={formData.Gst} onChange={handleInputChange}  />
     </div>
 
       {/* input-select */}
     <div>
       <label htmlFor="text">Cess Type</label>
       <br />
-      <input type='text'  placeholder='select' value={formData.cessType}  name="cessType" onChange={handleInputChange} />
-      <select className="my-select"  >
-        <option value=""></option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-      </select>
+      <input className='form-input'  type='text'  placeholder='select' value={formData.cessType}  name="cessType" onChange={handleInputChange} />
       
     </div>
 
     <div>
       <label htmlFor="email">cess Amount</label>
       <br />
-      <input type="text" placeholder='Enter Amount'  name="cessAmount" value={formData.cessAmount} onChange={handleInputChange}/>
+      <input className='form-input' type="text" placeholder='Enter Amount'  name="cessAmount" value={formData.cessAmount} onChange={handleInputChange}/>
     </div>
 
     <div className="effect">
@@ -215,9 +211,9 @@ const Home = () => {
     </div>
 
     <br />
-
-    <input type="text" placeholder='Enter Note' className='Note' name="message" value={formData.message} onChange={handleInputChange} />
- 
+     <label htmlFor="">Price List Note</label>
+    <input  type="text" placeholder='Enter Note' className='Note' name="message" value={formData.message} onChange={handleInputChange} />
+        <br />
      <label>Mark As Defualt</label>
      <input type="checkbox"/>
 
