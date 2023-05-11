@@ -70,7 +70,7 @@ const Home = () => {
 
 
   useEffect(()=>{
-    axios.get("https://fakestoreapi.com/products")
+    axios.get("https://jsonplaceholder.typicode.com/users")
     .then(responce =>{
       setData(responce.data)
     })
@@ -114,7 +114,7 @@ const Home = () => {
                 <input type="text" className='tab'  placeholder='Price list Note'/>
                 <input type="text" className='last-tab'  />
    
-                <input type="text" className='tab' placeholder={item.price} />
+                <input type="text" className='tab' placeholder={item.id}/>
                 <input type="text" className='tab' placeholder='Price ()'  />
                 <input type="text" className='tab' placeholder='Rate' />
                 <input type="text" className='tab'  />
@@ -125,10 +125,10 @@ const Home = () => {
                 <input type="text" className='last-tab'   />
    
    
-                <input type="text" className='tab' placeholder={item.price}  />
-                <input type="text" className='tab' placeholder={item.count} />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
+                <input type="text" className='tab' placeholder={item.id}  />
+                <input type="text" className='tab' placeholder={item.name} />
+                <input type="text" className='tab' placeholder={item.email} />
+                <input type="text" className='tab' placeholder={item.city} />
                 <input type="text" className='tab'  />
                 <input type="text" className='tab'  />
                 <input type="text" className='tab'  />
@@ -174,11 +174,12 @@ const Home = () => {
           </div>
 
           
-           <span>item Name</span>
+        <div className="hero-head">
+        <span>item Name</span>
            <br />
-           <p>logitche ddsvjhds  dsdsv</p>
+           <p>logitche Blootooth speaker</p>
+        </div>
       
-       
      <form className='form' onSubmit={handleSubmit}>
       <div>
       <label htmlFor="Amount">Amount</label>
@@ -214,8 +215,10 @@ const Home = () => {
      <label htmlFor="">Price List Note</label>
     <input  type="text" placeholder='Enter Note' className='Note' name="message" value={formData.message} onChange={handleInputChange} />
         <br />
-     <label>Mark As Defualt</label>
+        <br />
      <input type="checkbox"/>
+     <label>Mark As Defualt</label>
+ 
 
      <div className="button">
          <button>Cancel</button>
