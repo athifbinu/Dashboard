@@ -35,17 +35,17 @@
 }
 
 .price-list{
-    background-color: aqua;
     width: 30%;
     justify-content: end;
-    background-color: aqua;
     width: 30%;
     justify-content: end;
     padding: 40px;
     margin-left: 700px;
+    
 }
 .close-icon{
     display: flex;
+    gap: 25px;
 }
 .close-icon img{
     width: 20px;
@@ -71,5 +71,17 @@
     display: grid;
     justify-content: end;
     padding: 10px;
+    gap: 10px;
 }
- 
+.button button{
+    width: 90px;
+    border: none;
+    font-size: 14px;
+    height: 35px;
+    opacity: 0.8;
+    text-align: center;
+}
+ .submit{
+    background-color: rgb(78, 78, 214);
+    color: #fff
+ }
