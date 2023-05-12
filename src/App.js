@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Icons from './components/Icons'
 import Home from "./components/Home"
 import "./Styles/App.css"
+
 const App = () => {
   return (
     <div>

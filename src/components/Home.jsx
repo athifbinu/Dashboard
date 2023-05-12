@@ -97,62 +97,61 @@ const Home = () => {
         <div className="bill-section">
           <p>Price List</p>
           <br />
+            
             {
-               data.map((item,inedex)=>{
-                 if(inedex<1)
+             data.slice(0,1).map((item)=>{
 
                  return(
-                  <>
-                <div className="bill-form">
-                <input type="text" className='tab' placeholder='Price Id'  />
-                <input type="text" className='tab' placeholder='selling'  />
-                <input type="text" className='tab' placeholder='GST' />
-                <input type="text" className='tab'  placeholder='Cess Type' />
-                <input type="text" className='tab' placeholder='Cess'  />
-                <input type="text" className='tab' placeholder='Effect'  />
-                <input type="text" className='tab' placeholder='Effect' />
-                <input type="text" className='tab'  placeholder='Price list Note'/>
-                <input type="text" className='last-tab'  />
-   
-                <input type="text" className='tab' placeholder={item.id}/>
-                <input type="text" className='tab' placeholder='Price ()'  />
-                <input type="text" className='tab' placeholder='Rate' />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab' placeholder='Amount'  />
-                <input type="text" className='tab' placeholder='Form' />
-                <input type="text" className='tab'  placeholder='To' />
-                <input type="text" className='tab'  />
-                <input type="text" className='last-tab'   />
-   
-   
-                <input type="text" className='tab' placeholder={item.id}  />
-                <input type="text" className='tab' placeholder={item.name} />
-                <input type="text" className='tab' placeholder={item.email} />
-                <input type="text" className='tab' placeholder={item.city} />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='last-tab' placeholder='...' />
-   
-                <input type="text" className='tab' placeholder={item.price} />
-                <input type="text" className='tab' placeholder={item.count} />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='tab'  />
-                <input type="text" className='last-tab' placeholder='...' onClick={handleFirstButtonClick}/>
 
-              
-   
-                </div>
-
-                  </>
+                  <div className="bill-form" key={item.id}>
+                  <input type="text" className='tab' placeholder='Price Id'  />
+                  <input type="text" className='tab' placeholder='selling'  />
+                  <input type="text" className='tab' placeholder='GST' />
+                  <input type="text" className='tab'  placeholder='Cess Type' />
+                  <input type="text" className='tab' placeholder='Cess'  />
+                  <input type="text" className='tab' placeholder='Effect'  />
+                  <input type="text" className='tab' placeholder='Effect' />
+                  <input type="text" className='tab'  placeholder='Price list Note'/>
+                  <input type="text" className='last-tab'  />
+     
+                  <input type="text" className='tab' placeholder={item.name}/>
+                  <input type="text" className='tab' placeholder='Price ()'  />
+                  <input type="text" className='tab' placeholder='Rate' />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab' placeholder='Amount'  />
+                  <input type="text" className='tab' placeholder='Form' />
+                  <input type="text" className='tab'  placeholder='To' />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='last-tab'   />
+     
+     
+                  <input type="text" className='tab' placeholder={item.name}  />
+                  <input type="text" className='tab' placeholder={item.name} />
+                  <input type="text" className='tab' placeholder={item.email} />
+                  <input type="text" className='tab' placeholder={item.username} />
+                  <input type="text" className='tab'  placeholder={item.city}/>
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='last-tab' placeholder='...' />
+     
+                  <input type="text" className='tab' placeholder={item.name} />
+                  <input type="text" className='tab' placeholder={item.name} />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='tab'  />
+                  <input type="text" className='last-tab' placeholder='...' onClick={handleFirstButtonClick}/>
+  
+                
+     
+                  </div>
                  )
-               })
+              })
             }
+       
         </div>
 
              {  showSecondButton && (

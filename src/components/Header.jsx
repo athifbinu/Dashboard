@@ -10,6 +10,8 @@ import {AiFillBell} from "react-icons/ai"
 
 import "../Styles/header.css"
 
+import Badge from 'react-bootstrap/Badge';
+
 const Header = () => {
   return (
     <header className='header'>
@@ -26,6 +28,7 @@ const Header = () => {
          <ul className='main-nav-list'>
 
          <li>
+         <Badge bg='danger'>9</Badge>
           <AiFillBell/>
          </li>
          
